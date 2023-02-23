@@ -28,6 +28,12 @@
             <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>software.constructs</groupId>
+            <artifactId>constructs</artifactId>
+            <version>${constructs.version}</version>
+        </dependency>
+
         <!-- AWS Cloud Development Kit -->
         <dependency>
             <groupId>software.amazon.awscdk</groupId>
@@ -35,10 +41,22 @@
             <version>${cdk.version}</version>
         </dependency>
 
+        <!-- K8S Cloud Development Kit -->
         <dependency>
-            <groupId>software.constructs</groupId>
-            <artifactId>constructs</artifactId>
-            <version>${constructs.version}</version>
+            <groupId>org.cdk8s</groupId>
+            <artifactId>cdk8s</artifactId>
+            <version>2.6.49</version>
+        </dependency>
+        <dependency>
+            <groupId>org.cdk8s</groupId>
+            <artifactId>cdk8s-plus-25</artifactId>
+            <version>2.4.21</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>30.0-jre</version>
         </dependency>
     </dependencies>
 

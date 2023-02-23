@@ -1,0 +1,4 @@
+language: java
+app:  mvn -e -q compile spring-boot:run
+imports:
+  - k8s
