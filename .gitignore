@@ -4,10 +4,7 @@ target/
 !**/src/test/**/target/
 
 ### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -40,3 +37,9 @@ build/
 # CDK asset staging directory
 .cdk.staging
 cdk.out
+
+# Ingoring CDK8S Imports - there is some discussion over whether or not it is the best approach to ignore the imports directory
+# For now, the imports directory is ignored to avoid unnecessary bloat to the repository
+# In the future, it may be better to include only specific imports (i.e. add only specific, in-use, imports to git), ensuring
+# additional stability while limiting the size of the repository
+imports/
