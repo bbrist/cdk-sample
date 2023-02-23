@@ -1,10 +1,20 @@
 # Infrastructure as Code (using CDKs) Sample
 
+## Overview
+
+This project is a sample of how to use the [AWS CDK](https://docs.aws.amazon.com/cdk/latest/guide/home.html) and [K8S CDK](https://cdk8s.io/) to define infrastructure as code.
+
+[Construct Hub](https://constructs.dev/) is a great resource for finding constructs to use in your CDK projects.
+
 ## AWS CDK
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
 It is a [Maven](https://maven.apache.org/) based project, so you can open this project with any Maven compatible Java IDE to build and run tests.
+
+Resources:
+* [AWS CDK V2](https://docs.aws.amazon.com/cdk/api/v2/)
+* [AWS CDK Workshop](https://cdkworkshop.com/)
 
 ### Useful commands
 
@@ -25,6 +35,9 @@ For example:
 ## K8S CDK
 
 The `cdk8s.json` file tells the CDK Toolkit how to execute your app.
+
+Resources:
+* [Documentation Reference](https://cdk8s.io/docs/latest/getting-started/)
 
 ### Useful commands
 
