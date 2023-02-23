@@ -39,3 +39,8 @@ Run the following command to deploy the synthesized chart:
 ```
 kubectl apply -f dist/
 ```
+
+## Notes
+
+Running `cdk synth` will produce both the CloudFormation template and the k8s manifests (i.e. it doesn't appear necessary to run both `cdk synth` and `cdk8s synth`).
+However, it does not appear that running `cdk8s synth` will produce the CloudFormation template.

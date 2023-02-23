@@ -23,12 +23,7 @@ public class K8sChart extends Chart {
                         .annotations(Map.ofEntries(
                                 Map.entry("eks.amazonaws.com/role-arn", "service-account-role-arn")
                         ))
-                        .labels(Map.ofEntries(
-                                Map.entry("app", "app-name"),
-                                Map.entry("chart", "chart-name"),
-                                Map.entry("release", "app-name"),
-                                Map.entry("heritage", "heritage")
-                        ))
+                        .labels(options.getLabels())
                     .build())
                 .build();
     }
